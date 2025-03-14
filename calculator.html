@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator Clone</title>
+	<style type="text/css">
+		*{
+          margin: 0px;
+		}
+	</style>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<div class="bg-[#cbd5e1] h-screen pt-4">
+		<h1 class="text-5xl text-center font-serif py-9">Simple Calculator</h1>
+		<div class= " w-1/4 bg-[#1c1917] mx-auto p-4">
+		  <form name="myform">
+			<input type="text" name="text" placeholder="0" class="w-full pt-11 pb-4 px-2 mb-2 text-[40px] text-white bg-transparent shadow-md  shadow-slate-950 text-right focus:outline-none ">    
+		        <div class="grid grid-cols-4 gap-3 ml-3 my-3">
+				    <input type="button" value="AC" class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950" onclick="myform.text.value = '' ">
+				    <input type="button" value="&#9003" class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950" onclick="myform.text.value = myform.text.value.substr(0,myform.text.value.length-1) ">
+				    <input type="button" value="%"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '%' ">
+				    <input type="button" value="/"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '/' ">
+			
+				    <input type="button" value="7"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '7' ">
+				    <input type="button" value="8"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '8' ">
+				    <input type="button" value="9"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '9' ">
+				    <input type="button" value="*"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '*' ">
+			
+				    <input type="button" value="4"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '4' ">
+				    <input type="button" value="5"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '5' ">
+				    <input type="button" value="6"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '6' ">
+				    <input type="button" value="-"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '-' ">
+		
+				    <input type="button" value="1"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '1' ">
+				    <input type="button" value="2"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '2' ">
+			        <input type="button" value="3"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+			        onclick="myform.text.value += '3' ">
+				    <input type="button" value="+"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '+' ">
+		
+				    <input type="button" value="00"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '00' ">
+				    <input type="button" value="0"class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '0' ">
+				    <input type="button" value="."class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-lime-400 bg-transparent shadow-slate-950"
+				    onclick="myform.text.value += '.' ">
+				    <input type="button" value="="class="rounded-full w-[60px] my-1 px-2 py-4 shadow-md text-white bg-[#f59e0b] shadow-slate-950"
+				    onclick="myform.text.value = eval(myform.text.value) ">
+			   </div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
